@@ -2,7 +2,7 @@ def pig_it(text):
     new_sentence = []
     sentence = text.split(" ")
     for word in sentence:
-        if word == "!" or word == "?":
+        if word in ["!", "?"]:
             new_sentence.append(word)
         else:
             new_word = f"{word[1:]}{word[0]}ay"
